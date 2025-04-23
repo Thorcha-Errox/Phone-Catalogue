@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #12ABB0, #B012AB);
+}
+.navBar{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo img{
+    z-index: 1;
+    position:relative;
+    height: 3vw;
+    width: 100%;
+    margin-left: 1vw;
+}
+.navLinks{
+    width: fit-content;
+    margin-right: 2vw;
+    flex: auto;
+    text-align: right;
+}
+.navLinks ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 1vw;
+    text-align: none;
+}
+.navLinks ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature img{
+    width: 70px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin: top 8px; ;
+}
+
+.one {
+    top: 50%; 
+    right: -50px; 
+    transform: translateY(-50%) rotate(0deg); 
+}
+
+.two {
+    top: 0%; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(-90deg); 
+}
+
+.three {
+    bottom: 50%; 
+    left: -50px; 
+    transform: translateY(50%) rotate(-180deg); 
+}
+
+.four {
+    bottom: 0%; 
+    right: 50%; 
+    transform: translateX(50%) rotate(-270deg); 
+}
+
+
+.controls {
+    position: absolute;
+    right: 5%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    text-align: center;
+}
+
+.mobile{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+}
+#upbtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downbtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
